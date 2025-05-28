@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     max-width: 31.25rem;
     color: #DFFBC0;
-    background-color: #02120c;
+    background-color: #021323;
 }
 
 nav li {
@@ -47,4 +47,10 @@ a:active {
 
 article.project {
     margin: 70px 50px;
+    padding: 50px;
+    color: #aee33b;
+    background-color: #000000;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px 50px;
 }
