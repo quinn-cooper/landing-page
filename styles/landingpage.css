@@ -44,3 +44,7 @@ a:active {
     color: #F39B49;
     text-decoration: none;
 }
+
+article {
+    margin: 70px 50px;
+}
