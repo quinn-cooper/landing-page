@@ -1,11 +1,11 @@
-html { 
-box-sizing: border-box; 
-} 
+html {
+    box-sizing: border-box;
+}
 
-*, 
-*:before, 
-*:after { 
-box-sizing: inherit; 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 
@@ -13,9 +13,34 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 31.25rem;
-    background-color: blanchedalmond;
+    color: #DFFBC0;
+    background-color: #02120c;
 }
 
 nav li {
-	display: inline-block;
+    display: inline-block;
+}
+
+/* Unvisited link */
+a:link {
+    color: #abc369;
+    text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Mouse over link */
+a:hover {
+    color: #F39B49;
+    text-decoration: none;
+}
+
+/* Selected link */
+a:active {
+    color: #F39B49;
+    text-decoration: none;
 }
