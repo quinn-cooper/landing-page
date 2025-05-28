@@ -45,6 +45,6 @@ a:active {
     text-decoration: none;
 }
 
-article {
+article.project {
     margin: 70px 50px;
 }
