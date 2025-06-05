@@ -8,49 +8,211 @@ html {
     box-sizing: inherit;
 }
 
-
+/* Typography -------------------------------- */
 body {
+    font-family: "Inconsolata", monospace;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 1.1;
     text-align: center;
     margin: 0 auto;
-    max-width: 31.25rem;
-    color: #DFFBC0;
-    background-color: #02172c;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Arvo", serif;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+h2.about-me {
+    color: #0d162b;
+}
+
+h2.projects {
+    color: white;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+p.about {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 2;
+    max-width: fit-content;
+}
+
+/* Background Colors -------------------------------- */
+div.white-bg {
+    background-color: #ffffff;
+}
+
+div.blue-bg {
+    background-color: #0d162b;
+    padding-bottom: 40px;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+/* Layouts -------------------------------- */
+
+header,
+section,
+footer {
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+/* Links -------------------------------- */
+a {
+    padding: 10px;
+}
+
+ul {
+    border: 2px solid #d27e4f;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+a:link {
+    color: #051f39;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #051f39;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d27e4f;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Header Flex -------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #02172c;
+}
+
+h1 {
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
 nav li {
     display: inline-block;
 }
 
-/* Unvisited link */
-a:link {
-    color: #acc95a;
-    text-decoration: none;
+nav {
+    order: -1;
 }
 
-/* Visited link */
-a:visited {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+/* About Section -------------------------------- */
+section.about {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background-color: white;
+    color: #0d162b;
 }
 
-/* Mouse over link */
-a:hover {
-    color: #F39B49;
-    text-decoration: none;
+p.about {
+    margin: 0;
+    padding: 10px 20px;
 }
 
-/* Selected link */
-a:active {
-    color: #F39B49;
-    text-decoration: none;
+/* Project Section -------------------------------- */
+section.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
 }
 
-article.project {
-    margin: 70px 100px;
-    padding: 70px;
-    color: #acd74e;
-    background-color: #000000;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 15px 70px;
+.project h2 {
+    width: 100%;
+}
+
+article.project-article {
+    border: 3px solid #d0d25f;
+    border-radius: 15px;
+    background-color: black;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 260px;
+    height: 400px;
+}
+
+h3.project-header {
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    background-color: #d0d25f;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 0;
+}
+
+/* Sourced W3Schools for border-radius to round corners of project cards */
+
+p.dev-text {
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* @media (max-width: 26.5625em) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        color: #02172c;
+    }
+
+    /* h1 {
+        margin: 20px;
+        line-height: 3rem;
+    } */
+
+nav {
+    flex-direction: column;
+    line-height: 2rem;
 }
